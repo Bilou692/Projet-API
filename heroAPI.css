@@ -9,7 +9,7 @@
 }
 
 #couleur3 {
-    color: rgb(96, 96, 96);
+	color: rgb(96, 96, 96);
 }
 
 * {
@@ -19,20 +19,20 @@
 }
 
 #backgroundBlock {
-    width: 1350px; /* largeur */
-    height: 800px; /* hauteur */
-    background-color: #000000; /* couleur de fond */
-    border-radius: 20px; /* angles arrondis */
-    margin: 40px 45px; /* espace externe (centré) */
-    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6); /* ombre */
-    z-index: -1;
-    overflow: hidden;
+	width: 1350px; /* largeur */
+	height: 800px; /* hauteur */
+	background-color: #000000; /* couleur de fond */
+	border-radius: 20px; /* angles arrondis */
+	margin: 40px 45px; /* espace externe (centré) */
+	box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6); /* ombre */
+	z-index: -1;
+	overflow: hidden;
 }
 
 .dotElement {
-    position: relative;
-    left: 750px;
-    top: 200px;
+	position: relative;
+	left: 750px;
+	top: 200px;
 }
 
 html, body {
@@ -52,102 +52,102 @@ body {
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
 }
 
 /************************************************** GLOBAL AUDIO RELATED *******************************************************/
 
 .master-controls {
-    display: none;
-    visibility: hidden;
+	display: none;
+	visibility: hidden;
 }
 
 .tape-controls-play {
-    mask-image: url(img/118621_play_icon.png);
-    mask-size: contain;
-    height: 27px;
-    width: 26px;
+	mask-image: url(img/118621_play_icon.png);
+	mask-size: contain;
+	height: 27px;
+	width: 26px;
 }
 
 #playicon {
-    position: absolute;
-    z-index: 1;
-    top: 200px;  
-    left: 630px; 
-    opacity: 0.5; /* Complètement visible par défaut */
-    transition: opacity 0.3s ease;
+	position: absolute;
+	z-index: 1;
+	top: 200px;  
+	left: 630px; 
+	opacity: 0.5; /* Complètement visible par défaut */
+	transition: opacity 0.3s ease;
 }
 
 #playicon:hover {
-    /* transform: scale(1.1); */ /* Léger agrandissement */
+	/* transform: scale(1.1); */ /* Léger agrandissement */
    /*  animation: pulse 0.6s infinite; */ /* Animation continue */
    scale:1.07;
    opacity: 1;
 }
 
 @keyframes pulse {
-    0%, 100% {
-        transform: scale(1); /* État initial et final */
-    }
-    50% {
-        transform: scale(1.2); /* État intermédiaire */
-    }
+	0%, 100% {
+		transform: scale(1); /* État initial et final */
+	}
+	50% {
+		transform: scale(1.2); /* État intermédiaire */
+	}
 }
 
 /*********************************************** GLOBAL SEARCH RELATED *********************************************************/
 
 /* Conteneur de recherche */
 .search-container {
-    background-color: #f0f0f0;
-    z-index:1;
-    display: flex;
-    position: absolute;
-    top:0%;
-    left:80%;
-    align-items:center;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    border: 3px solid transparent;
-    border-radius: 25px;
-    padding: 5px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ombre de l'element */
-    top: 190px;
-    left: 1300px;
-    
+	background-color: #f0f0f0;
+	z-index:1;
+	display: flex;
+	position: absolute;
+	top:0%;
+	left:80%;
+	align-items:center;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	border: 3px solid transparent;
+	border-radius: 25px;
+	padding: 5px 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ombre de l'element */
+	top: 190px;
+	left: 1300px;
+	
 }
 
 .search-container:hover {
-    border: 3px solid #6600FF; /* au survol de la souris */
+	border: 3px solid #6600FF; /* au survol de la souris */
 }
 
 /* Champ de recherche */
 .search-input {
-        border: none;
-        outline: none;
-        padding: 10px;
-        font-size: 16px;
-        flex-grow: 1;
-        border-radius: 25px;
-        position: relative;
-    }
+		border: none;
+		outline: none;
+		padding: 10px;
+		font-size: 16px;
+		flex-grow: 1;
+		border-radius: 25px;
+		position: relative;
+	}
 
 /* Bouton de recherche */
-.search-button {    
-    color : white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 18px;
-    cursor:pointer; /* Indique que c'est un bouton cliquable */
-    all: unset; /* Retire tous les styles de base */
+.search-button {	
+	color : white;
+	border: none;
+	border-radius: 50%;
+	padding: 10px;
+	font-size: 18px;
+	cursor:pointer; /* Indique que c'est un bouton cliquable */
+	all: unset; /* Retire tous les styles de base */
 }
 
 .search-button:hover {   
  
-    transform: rotate(360deg); /* Tour complet */
-    transition: transform 0.5s ease-in-out; /* Transition fluide */
+	transform: rotate(360deg); /* Tour complet */
+	transition: transform 0.5s ease-in-out; /* Transition fluide */
 }
 
 /******************************************************** HERO PAGE *********************************************************************/
@@ -155,40 +155,54 @@ h1 {
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
 
 .image img {   
-    z-index: 1;
-    border: 10px solid #6600FF;    
-    display: flex;
-    position: absolute;
-    right: 80%;
-    top:0;
-    bottom:10%;
-    box-shadow: 10px 10px 0px rgba(96, 96, 96, 1); 
-    border-radius: 5%;
-    left: 400px ;
-    top: 300px;
+	z-index: 1;
+	border: 10px solid #6600FF;	
+	display: flex;
+	position: absolute;
+	right: 80%;
+	top:0;
+	bottom:10%;
+	box-shadow: 10px 10px 0px rgba(96, 96, 96, 1); 
+	border-radius: 5%;
+	left: 400px ;
+	top: 300px;
 }
 
 #heroName {
-    z-index: 1;           
-    position:absolute;
-    left:40%;
-    justify-self:center ;
-    color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-size: xx-large;
-    top: 320px;
-    left: 1100px;
+	z-index: 1;		   
+	position:absolute;
+	left:40%;
+	justify-self:center ;
+	color: #f0f0f0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: xx-large;
+	top: 330px;
+	left: 1100px;
+}
+
+#stats {
+	position:absolute;
+	left:40%;
+	justify-self:center ;
+	color: #f0f0f0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: x-large;
+	top: 565px;
+	left: 1110px;
+	font-weight: 400;
+	z-index: 2;
 }
 
 .textbox {
-	background-color:#6600FF;
-	opacity: 0.8;
+	background-color:rgba(102, 0, 255, 0.8);
+	/* opacity: 0.8; */
 	font-family: 'Istok Web', sans-serif;
 	color:#FFFFFF;
 	padding: 20px;
 	padding-right: 100px;
-	margin: 10px;
+	margin: 15px;
 	border-radius: 10px;
 	letter-spacing: 1px;
 	text-align: left;
@@ -197,6 +211,8 @@ h1 {
 	position: absolute;
 	width: 320px;
 	line-height: 25px;
+	position: absolute;
+	z-index: 1;
 }
 
 .regular {
@@ -215,41 +231,42 @@ h1 {
 #statistics {
 	top: 530px;
 	right: 470px;
+	margin-top: 50px;
 }
 
 /******************************************************** HOME PAGE *********************************************************************/
 
 #pageLogo {
-    position: relative;
-    z-index: 1;
-    top: 70px;  
-    left: 125px; 
+	position: relative;
+	z-index: 1;
+	top: 70px;  
+	left: 125px; 
 }
 
 .logoMenu {
-    position: absolute;
-    z-index: 1;
-    top: 390px;  
-    left: 830px; 
+	position: absolute;
+	z-index: 1;
+	top: 390px;  
+	left: 830px; 
 }
 
 .search-containerMenu {
-    background-color: #f0f0f0;
-    z-index:1;
-    display: flex;
-    position: absolute;
-    align-items:center;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 5px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */ 
+	background-color: #f0f0f0;
+	z-index:1;
+	display: flex;
+	position: absolute;
+	align-items:center;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	padding: 5px 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */ 
 }
 
 .search-containerMenu:hover {
-    border: 3px solid #6600FF;    /* au survol de la souris */
+	border: 3px solid #6600FF;	/* au survol de la souris */
 }
 
 /* Champ de recherche */
@@ -265,83 +282,83 @@ h1 {
 }
 
 /* Bouton de recherche */
-.search-buttonMenu {    
-    color : white;
-    border: "none";
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 18px;
-    cursor:pointer; /* Indique que c'est un bouton cliquable */
-    all: unset; /* Retire tous les styles de base */
-    justify-self: right; 
+.search-buttonMenu {	
+	color : white;
+	border: "none";
+	border-radius: 50%;
+	padding: 10px;
+	font-size: 18px;
+	cursor:pointer; /* Indique que c'est un bouton cliquable */
+	all: unset; /* Retire tous les styles de base */
+	justify-self: right; 
 }
 
 .search-buttonMenu:hover {
-    transform: rotate(360deg); /* Tour complet */
-    transition: transform 0.5s ease-in-out; /* Transition fluide */
+	transform: rotate(360deg); /* Tour complet */
+	transition: transform 0.5s ease-in-out; /* Transition fluide */
 }
 
 .dotElementmenu {
-    position: relative;
-    justify-self: center;
-    bottom: 340px;
-    right: 590px; 
+	position: relative;
+	justify-self: center;
+	bottom: 340px;
+	right: 590px; 
 }
 
 h3, h5 {
-    font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
-    position: absolute;
-    z-index: 1;
-    top: 450px;  
-    left: 878px;  
+	position: absolute;
+	z-index: 1;
+	top: 450px;  
+	left: 878px;  
 }
 
 h5 {
-    position: absolute;
-    z-index: 1;
-    top: 600px;  
-    left: 750px;  
+	position: absolute;
+	z-index: 1;
+	top: 600px;  
+	left: 750px;  
 }
 
 #icone {
-    position: absolute;
-    z-index: 1;
-    top: 588px;  
-    left: 700px; 
+	position: absolute;
+	z-index: 1;
+	top: 588px;  
+	left: 700px; 
 }
 
 #playiconMenu {
-    position: absolute;
-    z-index: 1;
-    top: 403px;  
-    left: 1055px; 
-    opacity: 0.5; /* Complètement visible par défaut */
-    transition: opacity 0.3s ease; /* Transition fluide */
+	position: absolute;
+	z-index: 1;
+	top: 403px;  
+	left: 1055px; 
+	opacity: 0.5; /* Complètement visible par défaut */
+	transition: opacity 0.3s ease; /* Transition fluide */
 }
 
 #playiconMenu:hover {
-    scale:1.07;
-    opacity: 1;
+	scale:1.07;
+	opacity: 1;
 }
 
 .search-containerMenu {
-    background-color: #f0f0f0;
-    z-index:1;
-    display: flex;
-    position: absolute;
-    align-items:center;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 5px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */ 
+	background-color: #f0f0f0;
+	z-index:1;
+	display: flex;
+	position: absolute;
+	align-items:center;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	padding: 5px 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */ 
 }
 
 .search-containerMenu:hover {
-    border: 3px solid #6600FF;    /* au survol de la souris */
+	border: 3px solid #6600FF;	/* au survol de la souris */
 }
