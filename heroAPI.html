@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>heroAPI</title>
-    <link rel="stylesheet" href ="heroAPI.css">
-    <script defer src="heroApi.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>heroAPI</title>
+	<link rel="stylesheet" href ="heroAPI.css">
+	<script defer src="heroApi.js"></script>
 </head>
 
-
-
 <body>
- <div id="backgroundBlock">
-   <div id="pageLogo">
-      <h1><span id="couleur1">Heroes</span><span id="couleur2">Hub</span></h1>
-      <div class="dotElement">
-        <img src="img/circle-dotted-background-pop-art-comic-style-illustration-png.png" alt="White dot" width="800" height="800" >
-      </div>
-    </div>  
-    <div id="heroName"><h2>Joker</h2></div>  
-    
-    <div class="image"> 
-        <img src="https://www.superherodb.com/pictures2/portraits/10/100/719.jpg" alt="imagepersonnage" width="380" height="540" >
-    </div>
- </div>
- <div class="search-container" >
-    <input type="text" placeholder="Search..." class="search-input">
-    <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
-</div>
-<div id="description" class="textbox">Publisher : <span class="bold">DC Comics</span><br>Full-name : <span class="bold">Jack Napier</span><br>Alignement : <span class="bold">Bad</span></div>
-<div id="statistics" class="textbox">Intelligence : <span class="bold">100</span><br>Strength : <span class="bold">10</span><br>Speed : <span class="bold">10</span><br>Durability : <span class="bold">60</span><br>Power : <span class="bold">43</span><br>Combat : <span class="bold">70</span></div>
-<div id="playicon">
-  <img src="img/118621_play_icon.png" alt="Icon Play" width="27" height="24">
-</div>
-
-
-<div id="boombox">
-  <div class="boombox-handle"></div>
-  <div class="boombox-body">
-      <section class="master-controls">
-          <input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
-          <datalist id="gain-vals">
-              <option value="0" label="min">
-              <option value="2" label="max">
-          </datalist>
-          <label for="volume"></label>
-          <input type="range" id="panner" class="control-panner" list="pan-vals" min="-1" max="1" value="0" step="0.01" data-action="panner" />
-          <datalist id="pan-vals">
-              <option value="-1" label="left">
-              <option value="1" label="right">
-          </datalist>
-          <!-- <label for="panner">PAN</label> -->
-          <!-- <button class="control-power" role="switch" aria-checked="false" data-power="on"> -->
-              <!-- <span>On/Off</span> -->
-          </button>
-      </section>
-      <section class="tape">
-      <audio src="Kevin MacLeod [Official] - Final Battle of the Dark Wizards - incompetech.com.m4a" crossorigin="anonymous" ></audio>
-<!--            type="audio/mpeg" -->
-              <div id="playicon">
-                  <button data-playing="false" class="tape-controls-play" role="switch" aria-checked="false">
-                  <img src="img/118621_play_icon.png" alt="Icon Play" width="27" height="24">
-              </div>
-          </button>
-      </section>
-  </div><!-- boombox-body -->
-</div>
-
-
+	<div id="backgroundBlock">
+		<div id="pageLogo">
+			<h1><span id="couleur1">Heroes</span><span id="couleur2">Hub</span></h1>
+			<div class="dotElement">
+				<img src="ressources/img/circle-dotted-background-pop-art-comic-style-illustration-png.png" alt="White dot" width="800" height="800">
+			</div>
+		</div>
+		<div id="heroName"><h2>Joker</h2></div>
+		<div class="image">
+			<img src="https://www.superherodb.com/pictures2/portraits/10/100/719.jpg" alt="imagepersonnage" width="380" height="540">
+		</div>
+	</div>
+	<div class="search-container">
+		<input type="text" placeholder="Search..." class="search-input">
+		<button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+	</div>
+	<div id="description" class="textbox">Publisher : <span class="bold">DC Comics</span><br>Full-name : <span class="bold">Jack Napier</span><br>Alignement : <span class="bold">Bad</span></div>
+	<div id="statistics" class="textbox">Intelligence : <span class="bold">100</span><br>Strength : <span class="bold">10</span><br>Speed : <span class="bold">10</span><br>Durability : <span class="bold">60</span><br>Power : <span class="bold">43</span><br>Combat : <span class="bold">70</span></div>
+	<div id="playicon">
+		<img src="ressources/img/118621_play_icon.png" alt="Icon Play" width="27" height="24">
+	</div>
+	<div id="boombox">
+		<div class="boombox-handle"></div> <!-- DO WE NEED THIS ? -->
+		<div class="boombox-body">
+			<section class="master-controls">
+				<input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume"/>
+				<datalist id="gain-vals">
+					<option value="0" label="min">
+					<option value="2" label="max">
+				</datalist>
+				<label for="volume"></label>
+				<input type="range" id="panner" class="control-panner" list="pan-vals" min="-1" max="1" value="0" step="0.01" data-action="panner"/>
+				<datalist id="pan-vals">
+					<option value="-1" label="left">
+					<option value="1" label="right">
+				</datalist>
+				<!-- <label for="panner">PAN</label> -->
+				<!-- <button class="control-power" role="switch" aria-checked="false" data-power="on"> -->
+					<!-- <span>On/Off</span> -->
+				<!-- </button> -->
+			</section>
+			<section class="tape">
+				<audio src="ressources/audio/Kevin MacLeod [Official] - Final Battle of the Dark Wizards - incompetech.com.m4a" crossorigin="anonymous"></audio>
+				<!-- type="audio/mpeg" -->
+				<div id="playicon">
+					<button data-playing="false" class="tape-controls-play" role="switch" aria-checked="false">
+					<img src="ressources/img/118621_play_icon.png" alt="Icon Play" width="27" height="24">
+					</button>
+				</div>
+			</section>
+		</div>
+	</div>
 </body>
-
 </html>
-
