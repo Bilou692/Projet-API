@@ -1,14 +1,101 @@
-/* Style global */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 0;
-    padding:0;
-    height: 20vh;
-    background-color: #f0f0f0;
-    display:grid;
+/************************************************** GLOBAL STYLE ****************************************************************/
+
+#couleur1 {
+	color: white;
 }
+
+#couleur2 {
+	color: #6600FF ;
+}
+
+#couleur3 {
+    color: rgb(96, 96, 96);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Pour inclure les paddings et bordures dans la taille des éléments */
+}
+
+#backgroundBlock {
+    width: 1350px; /* largeur */
+    height: 800px; /* hauteur */
+    background-color: #000000; /* couleur de fond */
+    border-radius: 20px; /* angles arrondis */
+    margin: 40px 45px; /* espace externe (centré) */
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6); /* ombre */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.dotElement {
+    position: relative;
+    left: 750px;
+    top: 200px;
+}
+
+html, body {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	background-color: #f0f0f0;
+	display:grid;
+	margin: 0;
+	padding: 0;
+	background: rgb(37,6,83);
+	background: linear-gradient(0deg, rgba(37,6,83,1) 0%, rgba(66,3,161,1) 46%, rgba(102,0,255,1) 100%);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/************************************************** GLOBAL AUDIO RELATED *******************************************************/
+
+.master-controls {
+    display: none;
+    visibility: hidden;
+}
+
+.tape-controls-play {
+    mask-image: url(img/118621_play_icon.png);
+    mask-size: contain;
+    height: 27px;
+    width: 26px;
+}
+
+#playicon {
+    position: absolute;
+    z-index: 1;
+    top: 200px;  
+    left: 630px; 
+    opacity: 0.5; /* Complètement visible par défaut */
+    transition: opacity 0.3s ease;
+}
+
+#playicon:hover {
+    /* transform: scale(1.1); */ /* Léger agrandissement */
+   /*  animation: pulse 0.6s infinite; */ /* Animation continue */
+   scale:1.07;
+   opacity: 1;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* État initial et final */
+    }
+    50% {
+        transform: scale(1.2); /* État intermédiaire */
+    }
+}
+
+/*********************************************** GLOBAL SEARCH RELATED *********************************************************/
 
 /* Conteneur de recherche */
 .search-container {
@@ -63,6 +150,10 @@ body {
     transition: transform 0.5s ease-in-out; /* Transition fluide */
 }
 
+/******************************************************** HERO PAGE *********************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
 .image img {   
     z-index: 1;
     border: 10px solid #6600FF;    
@@ -90,73 +181,13 @@ body {
     left: 1100px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Pour inclure les paddings et bordures dans la taille des éléments */
-}
-
-html, body {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: rgb(37,6,83);
-    background: linear-gradient(0deg, rgba(37,6,83,1) 0%, rgba(66,3,161,1) 46%, rgba(102,0,255,1) 100%);
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-}
-
-#pageLogo {
-    position: relative;
-    z-index: 1;
-    top: 70px;  
-    left: 125px; 
-}
-
-#couleur1 {
-    color: white;
-}
-
-#couleur2 {
-    color: #6600FF ;
-}
-
-#backgroundBlock {
-    width: 1350px; /* largeur */
-    height: 800px; /* hauteur */
-    background-color: #000000; /* couleur de fond */
-    border-radius: 20px; /* angles arrondis */
-    margin: 40px 45px; /* espace externe (centré) */
-    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6); /* ombre */
-    z-index: -1;
-    overflow: hidden;
-}
-
-.dotElement {
-    position: relative;
-    left: 750px;
-    top: 200px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
-
 .textbox {
 	background-color:#6600FF;
 	opacity: 0.8;
 	font-family: 'Istok Web', sans-serif;
 	color:#FFFFFF;
 	padding: 20px;
-    padding-right: 100px;
+	padding-right: 100px;
 	margin: 10px;
 	border-radius: 10px;
 	letter-spacing: 1px;
@@ -164,18 +195,8 @@ h1 {
 	width: fit-content;
 	height: fit-content;
 	position: absolute;
-    width: 320px;
-    line-height: 25px;
-}
-
-#description {
-    top: 380px;
-    right: 470px;
-}
-
-#statistics {
-    top: 530px;
-    right: 470px;
+	width: 320px;
+	line-height: 25px;
 }
 
 .regular {
@@ -186,12 +207,23 @@ h1 {
 	font-weight: 700;
 }
 
-h3, h5 {
-    font-family: Arial, Helvetica, sans-serif;
+#description {
+	top: 380px;
+	right: 470px;
 }
 
-#couleur3 {
-    color: rgb(96, 96, 96);
+#statistics {
+	top: 530px;
+	right: 470px;
+}
+
+/******************************************************** HOME PAGE *********************************************************************/
+
+#pageLogo {
+    position: relative;
+    z-index: 1;
+    top: 70px;  
+    left: 125px; 
 }
 
 .logoMenu {
@@ -199,73 +231,6 @@ h3, h5 {
     z-index: 1;
     top: 390px;  
     left: 830px; 
-}
-
-h3 {
-    position: absolute;
-    z-index: 1;
-    top: 450px;  
-    left: 878px;  
-}
-
-h5 {
-    position: absolute;
-    z-index: 1;
-    top: 600px;  
-    left: 750px;  
-}
-
-.dotElementmenu {
-    position: relative;
-    justify-self: center;
-    bottom: 340px;
-    right: 590px;
-}
-
-#icone {
-    position: absolute;
-    z-index: 1;
-    top: 588px;  
-    left: 700px; 
-}
-
-#playiconMenu {
-    position: absolute;
-    z-index: 1;
-    top: 403px;  
-    left: 1055px; 
-    opacity: 0.5; /* Complètement visible par défaut */
-    transition: opacity 0.3s ease; /* Transition fluide */
-}
-
-#playiconMenu:hover {
-    scale:1.07;
-    opacity: 1;
-}
-
-#playicon {
-    position: absolute;
-    z-index: 1;
-    top: 200px;  
-    left: 630px; 
-    opacity: 0.5; /* Complètement visible par défaut */
-    transition: opacity 0.3s ease;
-}
-
-#playicon:hover {
-    /* transform: scale(1.1); */ /* Léger agrandissement */
-   /*  animation: pulse 0.6s infinite; */ /* Animation continue */
-   scale:1.07;
-   opacity: 1;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1); /* État initial et final */
-    }
-    50% {
-        transform: scale(1.2); /* État intermédiaire */
-    }
 }
 
 .search-containerMenu {
@@ -289,14 +254,14 @@ h5 {
 
 /* Champ de recherche */
 .search-inputMenu {
-        border: none;
-        outline: none;
-        padding: 10px;
-        font-size: 16px;
-        flex-grow: 1;
-        border-radius: 25px;
-        position: relative;
-        padding-right: 150px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 16px;
+	flex-grow: 1;
+	border-radius: 25px;
+	position: relative;
+	padding-right: 150px;
 }
 
 /* Bouton de recherche */
@@ -316,14 +281,67 @@ h5 {
     transition: transform 0.5s ease-in-out; /* Transition fluide */
 }
 
-.master-controls {
-    display: none;
-    visibility: hidden;
+.dotElementmenu {
+    position: relative;
+    justify-self: center;
+    bottom: 340px;
+    right: 590px; 
 }
 
-.tape-controls-play{
-    mask-image: url(img/118621_play_icon.png);
-    mask-size: contain;
-    height: 27px;
-    width: 26px;
+h3, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    position: absolute;
+    z-index: 1;
+    top: 450px;  
+    left: 878px;  
+}
+
+h5 {
+    position: absolute;
+    z-index: 1;
+    top: 600px;  
+    left: 750px;  
+}
+
+#icone {
+    position: absolute;
+    z-index: 1;
+    top: 588px;  
+    left: 700px; 
+}
+
+#playiconMenu {
+    position: absolute;
+    z-index: 1;
+    top: 403px;  
+    left: 1055px; 
+    opacity: 0.5; /* Complètement visible par défaut */
+    transition: opacity 0.3s ease; /* Transition fluide */
+}
+
+#playiconMenu:hover {
+    scale:1.07;
+    opacity: 1;
+}
+
+.search-containerMenu {
+    background-color: #f0f0f0;
+    z-index:1;
+    display: flex;
+    position: absolute;
+    align-items:center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */ 
+}
+
+.search-containerMenu:hover {
+    border: 3px solid #6600FF;    /* au survol de la souris */
 }
